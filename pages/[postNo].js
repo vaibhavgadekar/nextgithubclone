@@ -18,7 +18,7 @@ function ActiveLink({ children, href }) {
 }
   
   
-   export async function getStaticProps(context) {
+   export async function getServerSideProps(context) {
     // Call an external API endpoint to get posts.
     // You can use any data fetching library
     const res = await fetch('https://jsonplaceholder.typicode.com/photos/{$postNo}')
