@@ -6,13 +6,14 @@ function ActiveLink({ children, href }) {
 
   return (
     <ul>
-        {posts.map((post) => (
-            <div>
-            <li>{post.id}</li>
-            <img src={post.url} alt="Vercel Logo" />
-          <li>{post.title}</li>
-    </div>
-        ))}
+//         {posts.map((post) => (
+//             <div>
+//             <li>{post.id}</li>
+//             <img src={post.url} alt="Vercel Logo" />
+//           <li>{post.title}</li>
+//     </div>
+//         ))}
+    <li>hkjhk</li>
       </ul>
   )
 }
