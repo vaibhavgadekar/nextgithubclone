@@ -5,10 +5,12 @@ function ActiveLink({ children, href }) {
   const { id } = router.query
 
   return (
+    <div>
     <a>
       {id}
     </a>
     <h1>jdj</h1>
+    </div>
   )
 }
 
