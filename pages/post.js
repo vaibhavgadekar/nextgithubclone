@@ -1,11 +1,15 @@
+mport Link from 'next/link'
+
 function post({ posts }) {
     return (
       <ul>
         {posts.map((post) => (
             <div>
+         <Link href="/[postNo]" as={`/${post.id}`}>
             <li>{post.id}</li>
             <img src={post.url} alt="Vercel Logo" />
           <li>{post.title}</li>
+        </Link>
           </div>
         ))}
       </ul>
