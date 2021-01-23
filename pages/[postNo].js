@@ -15,6 +15,7 @@ function ActiveLink({ children, href }) {
         ))}
       </ul>
   )
+}
   
   
    export async function getStaticProps() {
