@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 const Post = () => {
   const router = useRouter()
   const { id } = router.query
-console.log(id)
+console.log(id);
   return (
     <>
      
