@@ -2,12 +2,12 @@ import { useRouter } from 'next/router'
 
 function ActiveLink({ children, href }) {
   const router = useRouter()
-  const { id } = router.query
+  const {  postNo } = router.query
 
   return (
     <div>
     <a>
-      {id}
+      { postNo}
     </a>
     <h1>jdj</h1>
     </div>
