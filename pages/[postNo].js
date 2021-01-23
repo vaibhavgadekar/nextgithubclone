@@ -11,6 +11,7 @@ function ActiveLink({ children, href }) {
             <li>{post.id}</li>
             <img src={post.url} alt="Vercel Logo" />
           <li>{post.title}</li>
+    </div>
         ))}
       </ul>
   )
