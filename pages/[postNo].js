@@ -23,6 +23,7 @@ function ActiveLink({ children, href }) {
     // You can use any data fetching library
     const res = await fetch('https://jsonplaceholder.typicode.com/photos/{$postNo}')
     const posts = await res.json()
+    console.log(posts)
   
     // By returning { props: posts }, the Blog component
     // will receive `posts` as a prop at build time
