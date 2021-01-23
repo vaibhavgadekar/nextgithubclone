@@ -1,17 +1,22 @@
 import { useRouter } from 'next/router'
 
-
-const Post = () => {
+function ActiveLink({ children, href }) {
   const router = useRouter()
-  const { id } = router.query
-console.log(id);
+  const style = {
+    marginRight: 10,
+    color: router.pathname === href ? 'red' : 'black',
+  }
+
+  const handleClick = (e) => {
+    e.preventDefault()
+    router.push(href)
+  }
+
   return (
-    <>
-     
-   
-    <h1>{id}</h1>
-    </>
+    <a href={href} onClick={handleClick} style={style}>
+      {children}
+    </a>
   )
 }
 
-export default Post
+export default ActiveLink
