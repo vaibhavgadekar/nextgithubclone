@@ -6,9 +6,11 @@ function post({ posts }) {
         {posts.map((post) => (
             <div>
          <Link href="/[postNo]" as={`/${post.id}`}>
+<a>
             <li>{post.id}</li>
             <img src={post.url} alt="Vercel Logo" />
           <li>{post.title}</li>
+</a>
         </Link>
           </div>
         ))}
