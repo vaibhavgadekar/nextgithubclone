@@ -11,7 +11,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-     <Link href="/post">
+     <Link href="/post" as="/post/vaibhav">
     <a>this page!</a>
   </Link>
 
