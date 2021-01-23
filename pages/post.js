@@ -1,4 +1,4 @@
-function Blog({ posts }) {
+function post({ posts }) {
     return (
       <ul>
         {posts.map((post) => (
@@ -30,4 +30,4 @@ function Blog({ posts }) {
     }
   }
   
-  export default 
+  export default post
