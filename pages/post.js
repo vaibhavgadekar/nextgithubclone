@@ -5,7 +5,12 @@ function post({ posts }) {
       <ul>
         {posts.map((post) => (
             <div>
-         <Link href="/[postNo]" as={`/${post.id}`}>
+         <Link
+         href={{
+            pathname: '/[pageNo]',
+            query: { pageNo:post.id},
+          }}
+         >
 <a>
             <li>{post.id}</li>
 </a>
