@@ -7,8 +7,8 @@ function post({ posts }) {
             <div>
          <Link
          href={{
-            pathname: '/[pageNo]',
-            query: { pageNo:post.id},
+            pathname: '/[postNo]',
+            query: { postNo:post.id},
           }}
          >
 <a>
