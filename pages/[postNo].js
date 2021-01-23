@@ -18,10 +18,10 @@ function ActiveLink({ children, href }) {
 }
   
   
-   export async function getStaticProps() {
+   export async function getStaticProps(context) {
     // Call an external API endpoint to get posts.
     // You can use any data fetching library
-    const res = await fetch('https://jsonplaceholder.typicode.com/photos/'+postNo)
+    const res = await fetch('https://jsonplaceholder.typicode.com/photos/{$postNo}')
     const posts = await res.json()
   
     // By returning { props: posts }, the Blog component
